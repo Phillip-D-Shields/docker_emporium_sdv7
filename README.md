@@ -15,9 +15,26 @@
 2. Build and start Docker containers
 ```docker-compose up```
 
+> ### OPTIONAL - IF THE FIRST DEPLOYMENT ONLY SUCCESSFULLY LAUNCHES 1 of 2 CONTAINERS
+4. Stop and exit Docker containers (press CTRL + C)
+
+5. Relaunch Docker containers
+```docker-compose up```
+
+Not sure why this occurs, but a successful message should appear after the relaunch
 
 ### Access the live project
 
 Shop Clinet can be accessed via: ```http://localhost:8000```
 
 Admin UI can be accessed via: ```http://localhost:8000/admin```
+
+API can be accessed via: ```http://localhost:8000/api```
+
+#### Default Admin Credentials
+*** change after launching the project ***
+
+name: admin
+password: P@ssw0rd1
+
+*** this is a bad way to implement a default admin, i know.  ***
