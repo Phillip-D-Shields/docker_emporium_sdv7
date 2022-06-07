@@ -1,0 +1,17 @@
+{% extends 'shop/main.html' %}
+{% block content %}
+    <section class="section is-large">
+    <div class="container is-fluid has-text-centered">
+        {% if product %}
+            <h1 class="is-size-3">{{ product.name }}</h1>
+            <p class="is-size-4">{{ product.category }}</p>
+            <p class="is-size-4">published : {{ product.date_published }}</p>
+            <p class="is-size-4">${{ formatted_price }}</p>
+            <p class="is-size-4">{{ product.number_in_stock }} in stock</p>
+            <a href="{% url 'product' product.id %}" class="bg-blue-600 px-2 py-1" onclick={{ product.remove_one_from_stock }} >purchase</a>
+        {% else %}
+            <p>Product not found</p>
+        {% endif %}
+    </div>
+    </section>
+{% endblock %}

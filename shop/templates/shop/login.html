@@ -1,0 +1,16 @@
+{% extends 'shop/main.html' %}
+{% block content %}
+
+    <div class="flex flex-col items-center justify-center px-4 p-y">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input class="button is-primary" type="submit" value="login"/>
+        </form>
+
+        <p>need an account? <a href="{% url 'register' %}" class="button is-link">register here</a></p>
+    </div>
+
+
+
+{% endblock %}
