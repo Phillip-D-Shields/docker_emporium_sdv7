@@ -32,9 +32,11 @@ Admin UI can be accessed via: ```http://localhost:8000/admin```
 API can be accessed via: ```http://localhost:8000/api```
 
 #### Default Admin Credentials
+
 *** change after launching the project ***
 
 name: admin
+
 password: P@ssw0rd1
 
 *** this is a bad way to implement a default admin, i know.  ***
